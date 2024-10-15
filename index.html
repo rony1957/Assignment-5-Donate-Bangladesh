@@ -1,63 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5-Donate-Bangladesh</title>
-    <!-- Daisy UI link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Daisy UI link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5-Donate-Bangladesh</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- google font link -->
+
+
+  <!-- Daisy UI link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Daisy UI link -->
+
+
+  <style>
+    .lexend-font{
+      font-family: "Lexend", sans-serif;
+    }
+  </style>
+
+
 </head>
-<body>
 
-    <!-------------------------------------- header section start---------------------------------->
-     <header class=" h-40 w-full bg-[#F9F7F3]">
-        <!-- navbar section -->
-         <section class="max-w-screen-2xl mx-auto">
-            <!--  -->
-            <div class="header-main flex justify-between">
-                <!-- header button -->
-                <div id="header-main-btn" class="header-btn mt-9">
-                    <button class="btn btn-success bg-lime-400 w-24 text-xl font-semibold">Blog</button>
-                </div>
-                <!-- header button -->
+<body class="lexend-font">
 
-                <!-- header tittle and logo -->
-                 <div class="flex mt-9 gap-7">
-                    <div>
-                        <img src="./assets/logo.png" alt="">
-                    </div>
-                    <div class="flex justify-center items-center text-xl font-semibold">
-                        <h3>Donate Bangladesh</h3>
-                    </div>
-                 </div>
-                <!-- header tittle and logo -->
+  <!-------------------------------------- header section start---------------------------------->
+  <header class=" h-40 w-full bg-[#F9F7F3] sticky inset-0">
+    <!-- navbar section -->
+    <section class="max-w-screen-2xl mx-auto">
+      <!--  -->
+      <div class="header-main flex justify-between">
+        <!-- header button -->
+        <div class="header-btn mt-9">
+          <button id="header-main-btn" class="btn btn-success bg-lime-400 w-24 text-xl font-semibold">Blog</button>
+        </div>
+        <!-- header button -->
 
-                <!-- header stat and coin image -->
-                 <div class="flex mt-9 gap-3">
-                    <div>
-                        <img src="./assets/coin.png" alt="">
-                    </div>
-                    <div class="">
-                        <div class="stat-value text-xl font-medium">8400 BDT</div>
-                    </div>
-                 </div>
-                <!-- header stat and coin image -->
-            </div>
-         </section>
-        <!-- navbar section -->
-     </header>
-    <!-------------------------------------- header section end------------------------------------>
+        <!-- header tittle and logo -->
+        <div class="flex mt-9 gap-7">
+          <div>
+            <img src="./assets/logo.png" alt="">
+          </div>
+          <div class="flex justify-center items-center text-xl font-extrabold">
+            <h3>Donate Bangladesh</h3>
+          </div>
+        </div>
+        <!-- header tittle and logo -->
 
-
-
-    <!-- ------------------------------------main section start--------------------------------------- -->
-    <!-- ------------------------------------main section  end--------------------------------------- -->
+        <!-- header stat and coin image -->
+        <div class="flex mt-9 gap-3">
+          <div>
+            <img src="./assets/coin.png" alt="">
+          </div>
+          <div class="">
+            <div class="stat-value text-xl font-medium"> <span id="main-balance">8400</span> BDT</div>
+          </div>
+        </div>
+        <!-- header stat and coin image -->
+      </div>
+    </section>
+    <!-- navbar section -->
+  </header>
+  <!-------------------------------------- header section end------------------------------------>
 
 
-    <!---------------------------------------footer section start--------------------------------------->
-    <!---------------------------------------footer section end--------------------------------------->
+
+  <!-- ------------------------------------main section start--------------------------------------- -->
+  <!-- main button section -->
+  <main class="max-w-screen-2xl mx-auto">
+
     
+    <!-- donation and history button -->
+    <section>
+      <div class="flex justify-center items-center lg:mt-20 gap-7">
+        <button id="donation-btn" class="btn btn-primary w-28 text-xl font-medium">Donation</button>
+        <button id="history-btn" class="btn btn-primary w-28 text-xl font-medium text-[#111111B3]">History</button>
+      </div>
+    </section>
+    <!-- donation and history button -->
+
+
+    <!-- donation card area 1-->
+
+    <section class="max-w-6xl mx-auto mt-16">
+      <div class="hero flex justify-around border-2 p-6 rounded-xl">
+        <div class="hero-img">
+          <img src="./assets/noakhali.png" alt="">
+        </div>
+
+        <div>
+          <button class="btn"> <img src="./assets/coin.png" alt=""> <span id="donate-noakhali">5000</span> BDT</button>
+
+          <h3 class="text-xl font-semibold mt-3">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class="text-[#111111B3] text-base font-normal mt-3"> The recent floods in Noakhali have caused significant
+            damage to<br>homes infrastructure. Your donation will help provide essential <br> supplies and to those
+            affected by this disaster. Every contribution, <br> big or small, makes difference. Please join us in
+            supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p>
+
+          <input id="write-donation-ammount1" type="text" placeholder="Write Donation Amount"
+            class="w-full h-12 p-6 border rounded text-[#111111B3] mt-4">
+          <button id="donate-now-btn1" class="btn w-full bg-[#B4F461] mt-3">Donate Now</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- donation card area -->
+
+    <!-- donation card area 2-->
+    <section class="max-w-6xl mx-auto mt-16">
+      <div class="hero flex justify-around border-2 p-6 rounded-xl">
+        <div class="hero-img">
+          <img src="./assets/feni.png" alt="">
+        </div>
+
+        <div>
+          <button class="btn"> <img src="./assets/coin.png" alt=""><span id="donate-feni">3000</span> BDT</button>
+
+          <h3 class="text-xl font-semibold mt-3">Donate for Flood Relief in Feni,Bangladesh</h3>
+          <p class="text-[#111111B3] text-base font-normal mt-3"> The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
+
+          <input id="write-donation-ammount2" type="text" placeholder="Write Donation Amount"
+            class="w-full h-12 p-6 border rounded text-[#111111B3] mt-4">
+          <button id="donate-now-btn2" class="btn w-full bg-[#B4F461]  mt-3">Donate Now</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- donation card area 2-->
+
+
+    <!-- donation card area 3-->
+    <section class="max-w-6xl mx-auto mt-16">
+      <div class="hero flex justify-around border-2 p-6 rounded-xl">
+        <div class="hero-img">
+          <img src="./assets/quota-protest.png" alt="">
+        </div>
+
+        <div>
+          <button class="btn"> <img src="./assets/coin.png" alt=""><span id="donate-quota">2500</span>BDT</button>
+
+          <h3 class="text-xl font-semibold mt-3">Aid for Injured in the Quota Movement</h3>
+          <p class="text-[#111111B3] text-base font-normal mt-3"> The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to support these brave individuals in their time of need.</p>
+
+          <input id="write-donation-ammount3" type="text" placeholder="Write Donation Amount"
+            class="w-full h-12 p-6 border rounded text-[#111111B3] mt-4">
+          <button id="donate-now-btn3" class="btn w-full bg-[#B4F461]  mt-3" >Donate Now</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- donation card area 3-->
+  </main>
+  <!-- main button section -->
+  <!-- ------------------------------------main section  end--------------------------------------- --->
+
+
+  <!---------------------------------------footer section start--------------------------------------->
+  <!---------------------------------------footer section end--------------------------------------->
+
+
+
+
+  <!-- Js Link here -->
+  <script src="./js/practice.js"></script>
+  <script src="./js/utilities.js"></script>
+  <!-- Js Link here -->
+
 </body>
+
 </html>
