@@ -11,4 +11,11 @@ function getTextValueById(id){
     return number2;
 }
 
+function showSectionById(id){
+    document.getElementById('noakhali-section').classList.add('hidden');
+    document.getElementById('history').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden')
+}
+
 
