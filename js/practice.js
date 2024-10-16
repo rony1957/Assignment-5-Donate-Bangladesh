@@ -1,5 +1,7 @@
 document.getElementById('donation-btn').addEventListener('click', function () {
     showSectionById('noakhali-section')
+    document.getElementById('donation-btn').classList.add('bg-lime-400');
+    document.getElementById('history-btn').classList.remove('bg-lime-400');
 });
 
 
@@ -22,6 +24,8 @@ document.getElementById('donate-now-btn1').addEventListener('click', function ()
     // history
     document.getElementById('history-btn').addEventListener('click', function () {
         showSectionById('history');
+        document.getElementById('history-btn').classList.add('bg-lime-400')
+        document.getElementById('donation-btn').classList.remove('bg-lime-400');
 
         const div = document.createElement('div');
         console.log(div);
