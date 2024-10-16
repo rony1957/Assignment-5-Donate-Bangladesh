@@ -19,6 +19,7 @@ document.getElementById('donate-now-btn1').addEventListener('click', function ()
     const donateAmount = getTextValueById('donate-noakhali');
     const mainBalance = getTextValueById('main-balance');
 
+
    if(isNaN(donateTaka)){
     alert('Failed the add money.')
     return;
@@ -70,8 +71,9 @@ document.getElementById('donate-now-btn2').addEventListener('click', function ()
        }
 
 
-       if(donateTaka>mainBalance){
+       if(donateFeniTaka>mainBalance){
         alert('You do not have enough balance.')
+        return;
        }
     // 
     document.getElementById('history-btn').addEventListener('click', function () {
@@ -112,8 +114,9 @@ document.getElementById('donate-now-btn3').addEventListener('click', function ()
         return;
        }
 
-       if(donateTaka>mainBalance){
+       if(donateQuata>mainBalance){
         alert('You do not have enough balance.')
+        return;
        }
     // 
     document.getElementById('history-btn').addEventListener('click', function () {
