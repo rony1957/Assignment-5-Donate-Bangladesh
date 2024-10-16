@@ -19,6 +19,14 @@ document.getElementById('donate-now-btn1').addEventListener('click', function ()
     const donateAmount = getTextValueById('donate-noakhali');
     const mainBalance = getTextValueById('main-balance');
 
+   if(isNaN(donateTaka)){
+    alert('Failed the add money.')
+    return;
+   }
+
+   if(donateTaka>mainBalance){
+    alert('You do not have enough balance.')
+   }
     
     const newBalanceNoakhali = donateTaka + donateAmount;
 
@@ -56,7 +64,15 @@ document.getElementById('donate-now-btn2').addEventListener('click', function ()
     const donateFeniAmount = getTextValueById('donate-feni');
     const mainBalance = getTextValueById('main-balance');
 
+    if(isNaN(donateFeniTaka)){
+        alert('Failed the add money.')
+        return;
+       }
 
+
+       if(donateTaka>mainBalance){
+        alert('You do not have enough balance.')
+       }
     // 
     document.getElementById('history-btn').addEventListener('click', function () {
         showSectionById('history');
@@ -91,6 +107,14 @@ document.getElementById('donate-now-btn3').addEventListener('click', function ()
     const donateBalance = getTextValueById('donate-quota');
     const mainBalance = getTextValueById('main-balance');
 
+    if(isNaN(donateQuata)){
+        alert('Failed the add money.')
+        return;
+       }
+
+       if(donateTaka>mainBalance){
+        alert('You do not have enough balance.')
+       }
     // 
     document.getElementById('history-btn').addEventListener('click', function () {
         showSectionById('history');
