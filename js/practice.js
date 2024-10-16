@@ -1,3 +1,11 @@
+// blog button
+document.getElementById('header-main-btn').addEventListener('click', function(){
+    window.location.href= './question.html';
+    console.log('hi')
+})
+
+
+
 document.getElementById('donation-btn').addEventListener('click', function () {
     showSectionById('noakhali-section')
     document.getElementById('donation-btn').classList.add('bg-lime-400');
@@ -31,7 +39,7 @@ document.getElementById('donate-now-btn1').addEventListener('click', function ()
         console.log(div);
         div.className = 'border mt-4 my-5 rounded-xl p-5';
         div.innerHTML = `<h1>${donateTaka} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h1>
-        <p>${new Date()}</p>
+        <p>Time:${new Date()}</p>
         `
 
         document.getElementById('history-container').appendChild(div)
@@ -57,7 +65,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function ()
         console.log(div);
         div.className = 'border mt-4 my-5 rounded-xl p-5';
         div.innerHTML = `<h1>${donateFeniTaka} Taka is Donated for famine-2024 in Feni, Bangladesh</h1>
-        <p>${new Date()}</p>
+        <p>Time:${new Date()}</p>
         `
 
         document.getElementById('history-container').appendChild(div)
@@ -91,7 +99,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function ()
         console.log(div);
         div.className = 'border mt-4 my-5 rounded-xl p-5';
         div.innerHTML = `<h1>${donateQuata} Taka is Donated for famine-2024 in the Quata movement, Bangladesh</h1>
-        <p>${new Date()}</p>
+        <p>Time:${new Date()}</p>
         `
 
         document.getElementById('history-container').appendChild(div)

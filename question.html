@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font -->
+
+
+    <!-- Daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI link -->
+
+    <style>
+        .lexend-font{
+          font-family: "Lexend", sans-serif;
+        }
+      </style>
+
+</head>
+
+<body class="lexend-font">
+    <!-- header area -->
+    <section>
+        <!-- head -->
+        <header class=" h-40 w-full bg-[#F9F7F3]">
+            <!-- navbar section -->
+            <section class="max-w-screen-2xl mx-auto">
+                <!--  -->
+                <div class="header-main flex justify-between">
+                    <!-- header button -->
+                    <div class="header-btn mt-9">
+                        <button id="home-btn"
+                            class="btn btn-success bg-lime-400 w-24 text-xl font-semibold">Home</button>
+                    </div>
+                    <!-- header button -->
+
+                    <!-- header tittle and logo -->
+                    <div class="flex mt-9 gap-7">
+                        <div>
+                            <img src="./assets/logo.png" alt="">
+                        </div>
+                        <div class="flex justify-center items-center text-xl font-extrabold">
+                            <h3>Donate Bangladesh</h3>
+                        </div>
+                    </div>
+                    <!-- header tittle and logo -->
+
+                    <!-- header stat and coin image -->
+                    <div class="flex mt-9 gap-3">
+                        <div>
+                            <img src="./assets/coin.png" alt="">
+                        </div>
+                        <div class="">
+                            <div class="stat-value text-xl font-medium"> <span id="">8400</span> BDT</div>
+                        </div>
+                    </div>
+                    <!-- header stat and coin image -->
+                </div>
+            </section>
+            <!-- navbar section -->
+        </header>
+        <!-- head -->
+    </section>
+    <!-- header area -->
+
+
+
+    <!-- ----------------------------Question area------------------------------- -->
+     <section class="max-w-screen-2xl mx-auto">
+     <div class="mt-14">
+
+        <h1 class="text-5xl font-extrabold">Important FAQ ?</h1>
+    <!-- 1 -->
+    <div class="collapse bg-base-200 border-2 rounded-xl mt-9">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+        </div>
+      </div>
+    <!-- 1 -->
+
+    <!-- 2 -->
+    <div class="collapse bg-base-200 border-2 rounded-xl mt-9">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+        <div class="collapse-content">
+          <p>(1)Using getElementById: The getElementById method allows you to select an element by its ID. ... (2)Using getElementsByClassName: ... (3)Using getElementsByTagName: .. (4)Using querySelector: ... (5)Using querySelectorAll: ... (6)Changing the Text Content. ... (7)Changing the HTML Content. ... (8)Changing the Attribute Value.</p>
+        </div>
+      </div>
+    <!-- 2 -->
+
+    <!-- 3 -->
+    <div class="collapse bg-base-200 border-2 rounded-xl mt-9">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the contest of the DOM, and why it is useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+        </div>
+      </div>
+    <!-- 3-->
+
+    <!-- 4 -->
+    <div class="collapse bg-base-200 border-2 rounded-xl mt-9">
+        <input type="checkbox" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and style using the DOM?</div>
+        <div class="collapse-content">
+          <p>In this article, I’m going to cover everything you need to know about manipulating the DOM.(1)Change the Content of an Element. (2)Manipulate the Class Attribute. (3)Setting CSS Styles Using JavaScript. (4)Create, Add, and Remove Elements.(5)Insert Element at a Specific Position.(6)Manipulating Element Attributes.(7)Manipulating Data Attributes.</p>
+        </div>
+      </div>
+    <!-- 4 -->
+     </div>
+     </section>
+    <!-- ----------------------------Question area------------------------------- -->
+
+
+
+      <!-- Js Link here -->
+  <script src="./js/practice.js"></script>
+  <script src="./js/utilities.js"></script>
+  <script src="./js/home.js"></script>
+  
+  <!-- Js Link here -->
+</body>
+
+</html>
